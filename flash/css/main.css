@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*轮播图*/
+
+.flash {
+	width: 1200px;
+	height: 470px;
+	
+}
+
+.focus {
+	overflow: hidden;
+	width: 100%;
+	height: 470px;
+	position: relative
+}
+
+.focus .img {
+	width: 100%;
+	height: 100%
+}
+
+.focus .img .item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0
+}
+
+.focus .img img {
+	width: 1200px;
+	height: 470px
+}
+
+.focus .img a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: static;
+	overflow: hidden;
+	background: #ffffff
+}
+
+.focus .img span {
+	display: block;
+	width: 100%;
+	height: 74px;
+	text-indent: 10px;
+	position: relative;
+	top: -74px;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 46px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.focus .btn,
+.focus .np {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 205px
+}
+
+.focus .btn a,
+.focus .np a {
+	display: block;
+	width: 35px;
+	height: 13px;
+	background: rgba(255, 255, 255, .5);
+	float: left;
+	margin: 2px 3px;
+	overflow: hidden
+}
+
+.focus .btn a.cur {
+	background: #0076bd
+}
+
+.focus .btn a:hover {
+	background: #232323
+}
+
+.focus .np {
+	width: 60px
+}
+
+.focus .np a.n,
+.focus .np a.p {
+	width: 26px;
+	height: 15px;
+	background-position: 0 -92px;
+	margin: 0
+}
+
+.focus .np a.n:hover {
+	background-position: 0 -124px
+}
+
+.focus .np a.p {
+	margin-left: 3px;
+	background-position: 0 -76px
+}
+
+.focus .np a.p:hover {
+	background-position: 0 -108px
+}
+
+/*轮播图end*/
