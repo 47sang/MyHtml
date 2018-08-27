@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.w390{
+	width: 390px;
+}
+.red {
+    border-top: solid 4px #F00;
+}
+/* 列表滑动  */  
+.ttl {height:32px; }   
+.ctt {height:auto;   
+    padding:6px;   
+    clear:both;    
+    border-top:0;   
+    text-align:left;   
+} 
+.ctt1 ul li{border-bottom: 1px dotted #CCC;padding:1px 0;}
+
+
+.w288 {clear:both;
+    width:288px;/*滑动门的宽度*/  
+}   
+/* TAB 切换效果 */  
+.tb_ ul li {float:left;display:block;text-align:center;font-weight:bold; cursor:pointer;font-weight:bold;font-size:12px;height:32px;line-height:32px;display:block;width:97.5px; }
+/* 控制显示与隐藏css类 */  
+.normaltab {background:#000;color:#FFF;}   
+.normaltab:hover {background:#292929;color:#FFF;}  
+.hovertab {background:#FFF;color:#F00;}   
+.dis {margin-left:5px;display:block;}
+
+.dis ul li{font-size: 12px;line-height:28px;display: block;clear: both;}
+.dis ul li a{font-size:14px; height:28px; display:block; overflow:hidden; line-height:28px;}
+.dis ul li span{float:right; font-size: 12px;line-height:28px;display: block;clear: both;}
+.undis {display: none;}
