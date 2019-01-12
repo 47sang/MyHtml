@@ -2,5 +2,9 @@ Hello Word!
 
 new checkout ye!
 
+<<<<<<< HEAD
 
 master line
+=======
+master line
+>>>>>>> dev
