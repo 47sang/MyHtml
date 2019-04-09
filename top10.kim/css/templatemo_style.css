@@ -122,6 +122,9 @@ h5 {
 	margin: 0 0 20px 40px;
 	padding: 0px;
 }
+.list_01 span{
+	float: right;
+}
 
 .list_01 li {
 	margin: 0;
@@ -274,6 +277,10 @@ h5 {
 .section_w670 p {
 	margin-bottom: 15px;	
 }
+.section_w670 img {
+	max-width: 95% !important;
+	height: auto !important;
+}
 
 .section_w330 {
 	width: 330px;
@@ -281,6 +288,9 @@ h5 {
 
 .section_w330_content {
 	margin-right: 30px;
+}
+.section_w330_content span{
+	float: right;
 }
 
 .contact_section {
