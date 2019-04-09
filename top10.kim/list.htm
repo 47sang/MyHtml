@@ -8,7 +8,7 @@
     <title>{dede:field.seotitle/}_Top10精选网</title>
     <meta name="keywords" content="{dede:field name='keywords'/}" />
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
-    <link href="https://top10.kim/css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link href="https://top10.kim/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -29,11 +29,22 @@
                         {dede:type typeid='topid'}<h2>[field:typename/]</h2>{/dede:type}
 
                         <ul class="list_01">
-                            {dede:list titlelen=250 infolen='260' pagesize="50"}
-                            <li><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a><span>浏览:[field:click/]</span></li>
+                            {dede:list titlelen=250 infolen='260' pagesize="20"}
+                            <li>
+                                <a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a>
+                                <span>浏览:[field:click/]</span>
+                            </li>
                             {/dede:list}
-
                         </ul>
+                        <!--分页-->
+                        <div class="cb"></div>
+                        <div class="dede_pages">
+                            <ul class="pagelist">
+                                {dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}
+                            </ul>
+                        </div>
+                        <div class="cb"></div>
+                        <!--分页end-->
 
                     </div>
 

@@ -15,7 +15,7 @@ body {
 	color: #494234;
 	background: url(../img/templatemo_body_bg.png);
 }
-		
+.cb { clear: both; }
 a:link, a:visited { color: #191815; text-decoration: none; font-weight: normal;} 
 a:active, a:hover { color: #191815; text-decoration: underline;}
 
