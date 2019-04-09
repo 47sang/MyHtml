@@ -1,0 +1,148 @@
+<!DOCTYPE>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <link href="https://top10.kim/css/templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="templatemo_container">
+        
+        <!-- 导航 -->
+        {dede:include filename="www/nav.htm"/}
+        <!-- 导航end -->
+
+        <div id="templatemo_content">
+            <div class="section_w670">
+
+                <div class="section_w330 fl">
+
+                    <div class="section_w330_content">
+
+                        <h2>Git教程</h2>
+
+                        <ul class="list_01">
+                            {dede:arclist typeid='2' row="10"}
+                            <li><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a>
+                            </li>
+                            {/dede:arclist}
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="section_w330 fl">
+
+                    <div class="section_w330_content">
+
+                        <h2>资讯</h2>
+
+                        <ul class="list_01">
+                                {dede:arclist typeid='3' row="10"}
+                                <li><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a>
+                                </li>
+                                {/dede:arclist}
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section_w670">
+
+                <div class="section_w330 fl">
+
+                    <div class="section_w330_content">
+
+                        <h2>Top10游戏</h2>
+
+                        <ul class="list_01">
+                                {dede:arclist typeid='4' row="10"}
+                                <li><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a>
+                                </li>
+                                {/dede:arclist}
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="section_w330 fl">
+
+                    <div class="section_w330_content">
+
+                        <h2>VSCODE</h2>
+
+                        <ul class="list_01">
+                                {dede:arclist typeid='5' row="10"}
+                                <li><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a>
+                                </li>
+                                {/dede:arclist}
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <div class="section_w670">
+
+                <h2>欢迎访问精选网</h2>
+
+
+            </div> -->
+
+            <div class="cleaner_h40"></div>
+
+
+            <div class="section_w670">
+
+                <div class="section_w330 fl">
+
+                    <div class="section_w330_content">
+
+                        <h2>最新资讯</h2>
+
+                        <ul class="list_01">
+                                {dede:arclist typeid='1' row="10"}
+                                <li><a href="[field:arcurl /]" title="[field:title /]" target="_blank">[field:title /]</a>
+                                </li>
+                                {/dede:arclist}
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="section_w330 contact_section fr">
+                    <h2>TODO：</h2>
+                    <p>
+                        网站还在建设中……
+                    </p>
+                </div>
+
+            </div>
+            <div class="cleaner"></div>
+        </div>
+
+        <div id="content_bottom"></div>
+       <!-- 页脚 -->
+       {dede:include filename="www/footer.htm"/}
+       <!-- 页脚end -->
+        <div class="cleaner"></div>
+    </div>
+</body>
+
+</html>

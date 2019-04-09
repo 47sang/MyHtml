@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{dede:field.title/}_Top10精选网</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="https://top10.kim/css/templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="templatemo_container">
+        <!-- 导航 -->
+        {dede:include filename="www/nav.htm"/}
+        <!-- 导航end -->
+
+        <div id="templatemo_content">
+
+            <div class="section_w670">
+
+                <h2>{dede:field.title /}</h2>
+                
+                    <p>发布时间：{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}　　　浏览量：
+                        <script
+                            src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"
+                            type='text/javascript' language="javascript"></script>次</p>                
+                {dede:field.body/}
+                <!--文章分页-->
+				<div class="cb"></div>
+				<div class="dede_pages">
+					<ul class="pagelist">{dede:pagebreak/}</ul>
+				</div>
+				<!--文章分页end-->
+
+
+            </div>
+
+            <div class="cleaner_h40"></div>
+
+
+
+            <div class="cleaner"></div>
+        </div>
+
+        <div id="content_bottom"></div>
+        <!-- 页脚 -->
+        {dede:include filename="www/footer.htm"/}
+        <!-- 页脚end -->
+        <div class="cleaner"></div>
+    </div>
+</body>
+
+</html>
