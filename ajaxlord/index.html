@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>预加载-ajaxlord</title>
-		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</head>
+<head>
+    <meta charset="utf-8">
+    <title>
+        预加载-ajaxlord
+    </title>
+    <script src="js/jquery-3.4.0.min.js" type="text/javascript">
+    </script>
+    <script src="js/main.js" type="text/javascript">
+    </script>
+    </meta>
+</head>
 
-	<body>
-		<!--点击才加载显示：onmousedown-->
-		<!--滑动就加载显示：onmouseenter-->
-		<a onmousedown="jh()" id="jh" name="jh">剑魂</a>
-		<a onmousedown="hy()" id="hy" name="hy">红眼</a>
-		<div id="boo">
-			<h1>咖喱给给！我还没有进行加载呢。点击上方按钮进行加载</h1>
-		</div>
+<body>
+    <!--点击才加载显示：onmousedown-->
+    <!--滑动就加载显示：onmouseenter-->
+    <a id="jh" name="jh" onmousedown="a()">
+        剑魂
+    </a>
+    <a id="hy" name="hy" onmousedown="b()">
+        红眼
+    </a>
+    <div id="boo">
+        <h1>
+            咖喱给给！我还没有进行加载呢。点击上方按钮进行加载
+        </h1>
+    </div>
+    <h3>
+        录取状态根据学校动态的出现专业选择
+    </h3>
+    <select class="mdui-select" mdui-select="" name="register_for_school" id="school">
+        <option value="北京大学">
+            北京大学
+        </option>
+        <option value="湖南大学">
+            湖南大学
+        </option>
+        <option value="复旦大学">
+            复旦大学
+        </option>
+        <option value="清华大学">
+            清华大学
+        </option>
+        <option value="开心大学">
+            开心大学
+        </option>
+        <option value="中南大学">
+            中南大学
+        </option>
+    </select>
+    <select class="mdui-select" mdui-select="" name="register_for_professional" id="pfl">
+    </select>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        a()
+    });
+    $("#school").change(function() {
+        // console.log($(this).val());
+        var opt = $("#school").val();
+        var options = $("#school option:selected");
+        // alert(options.val());
+        panduan(options.val());
 
-
-	</body>
+    });
+    </script>
+</body>
 
 </html>
