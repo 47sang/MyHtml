@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="refresh" content="0.1;url=https://top10.kim/?from_404">
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://s.hnwsjy.com/js/mdui.min.js"></script>
+	<title>404</title>
+	<style>
+		body {
+			line-height: 1.4;
+			font-family: "Titillium Web", sans-serif;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		.page-404 {
+			height: 100vh;
+		}
+
+		.page-404 h1 {
+			font-size: 200px;
+		}
+
+		.btn:focus {
+			color: #ddd;
+		}
+
+		.btn.active:focus,
+		.btn:active:focus,
+		.btn:focus {
+			outline: 0;
+		}
+
+		.btn-main,
+		.btn-main-sm {
+			background-color: #21D6BF;
+			background-image: linear-gradient(100deg, #f9643d, #fe2a77);
+			color: #fff;
+			display: inline-block;
+			font-size: 14px;
+			letter-spacing: 1px;
+			padding: 10px 40px;
+			text-transform: uppercase;
+			border: 1px solid transparent;
+			border-radius: 2px;
+		}
+
+		.btn-main:hover,
+		.btn-main-sm:hover {
+			color: #fff;
+		}
+
+		.mt-20 {
+			margin-top: 20px;
+		}
+
+		.d-flex {
+			display: -ms-flexbox !important;
+			display: flex !important;
+		}
+
+		.align-items-center {
+			-ms-flex-align: center !important;
+			align-items: center !important;
+		}
+	</style>
+</head>
+
+<body>
+		<script>
+			var $$ = mdui.JQ;
+			$$(function () {
+				var curWwwPath = window.document.location.href;　　//获取当前网址，如： http://localhost:8083/uimcardprj/share/meun.jsp
+					
+				var pathName = window.document.location.pathname;　　//获取主机地址之后的目录，如： uimcardprj/share/meun.jsp
+				var pos = curWwwPath.indexOf(pathName);　　
+				
+				var localhostPaht = curWwwPath.substring(0, pos);　　//获取主机地址，如： http://localhost:8083
+				
+				var projectName = pathName.substring(0, pathName.substr(1).indexOf('/') + 1);　　//获取带"/"的项目名，如：/uimcardprj
+				bb = (localhostPaht + projectName);
+		
+				$$('#path').attr('href', localhostPaht); 
+				// console.log(aa)
+			})
+			
+		</script>
+	<section class="page-404 text-center d-flex align-items-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>404</h1>
+					<h2>页面未找到</h2>
+					<p>Sorry，无法查看您请求的页面地址。</p>
+					<p>正在跳转到首页……</p>
+					<a id="path" href="index.php" class="btn btn-main mt-20">回首页</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
